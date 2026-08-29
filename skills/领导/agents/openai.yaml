@@ -1,0 +1,4 @@
+interface:
+  display_name: "任务书领导"
+  short_description: "把一句话需求整理成 Agent 可独立执行和验收的目标任务书"
+  default_prompt: "使用 $领导 调研当前项目，并把我的想法整理成可直接交给执行 Agent 的目标任务书。"

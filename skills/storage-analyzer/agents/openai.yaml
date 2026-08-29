@@ -1,0 +1,4 @@
+interface:
+  display_name: "存储空间分析"
+  short_description: "只读分析磁盘占用，按风险分级生成清理建议与 HTML 报告"
+  default_prompt: "使用 $storage-analyzer 分析当前电脑的存储空间占用，并给出安全分级的清理建议。"

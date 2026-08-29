@@ -1,0 +1,4 @@
+interface:
+  display_name: "代码深度讲解"
+  short_description: "结合代码上下文深入解释文件、函数、模块关系与关键实现逻辑"
+  default_prompt: "使用 $代码深度讲解 帮我深入理解指定代码及其上下文和实现逻辑。"
