@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill 总结"
+  short_description: "盘点本地自定义 Skill，并简要说明每个 Skill 的主要功能"
+  default_prompt: "使用 $skill-zongjie 盘点我的本地自定义 Skill，并逐项说明用途。"

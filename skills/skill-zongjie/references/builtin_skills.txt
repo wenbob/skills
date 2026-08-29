@@ -1,0 +1,33 @@
+# Built-in local skills currently installed under ~/.codex/skills.
+# The summary script treats folders not in this list as custom local skills.
+adapt
+animate
+api-design
+arrange
+audit
+backend-patterns
+better-icons
+bolder
+clarify
+colorize
+critique
+delight
+design-md-reference
+distill
+doc
+extract
+figma
+frontend-design
+frontend-skill
+harden
+normalize
+onboard
+optimize
+overdrive
+pdf
+polish
+quieter
+screenshot
+spreadsheet
+teach-impeccable
+typeset

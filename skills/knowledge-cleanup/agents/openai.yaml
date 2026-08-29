@@ -1,0 +1,4 @@
+interface:
+  display_name: "洁癖"
+  short_description: "同步并清理项目文档、规则与记忆，保持知识库准确一致"
+  default_prompt: "使用 $knowledge-cleanup 检查并同步当前项目中已过期或不一致的文档与记忆。"
