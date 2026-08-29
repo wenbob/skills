@@ -1,0 +1,185 @@
+version: 1
+cases:
+  - id: deepseek-over-polished-social-commentary
+    feedback_source: "DeepSeek review supplied by user"
+    expected_flags:
+      - explicit-scaffold
+      - rhetorical-question-barrage
+      - short-paragraph-run
+      - symmetric-negation-run
+    ai_like_excerpt: |
+      这三条线必须分开。
+
+      婚姻失败，不等于法律失效。
+
+      情绪可以被理解，不等于暴力可以被授权。
+
+      一个人受过伤害，也不等于他有资格决定另一个人是否应该活着。
+
+      谁来确认出轨是否属实？
+
+      谁来判断伤害有多严重？
+
+      谁来决定一次背叛应该付出什么代价？
+    humanized_excerpt: |
+      就算婚姻里真的有背叛，走到街头纵火这一步，也已经和「替自己讨个说法」不是一回事了。很多人会同情一个被背叛的人，这不奇怪。但同情到哪里停下来，是这件事里最麻烦的地方。
+
+      如果每个人都能在最愤怒的时候自己决定代价，最后拼的就会变成谁先动手，谁更敢失控。背叛婚姻的人要承担责任，但这个责任怎么追，只能交给法律。
+  - id: deepseek-viral-story-deconstruction
+    feedback_source: "DeepSeek review supplied by user"
+    expected_flags:
+      - problem-redefinition-template
+      - prop-reframing
+      - viral-story-deconstruction
+    ai_like_excerpt: |
+      这个故事现在传播得最广的版本，是一个玩兵击的男朋友，穿着一身罗马甲，跨省杀进网瘾学校，把女朋友抢了回来。
+
+      听起来像一个真人版支线任务。
+
+      但看完报道，会发现事情其实没有那么痛快。准确地说，铠甲只是其中一个小插曲。
+
+      这句话比铠甲重要得多。
+
+      说得直白一点，这已经不是普通的教育分歧了。它更像一门生意。
+
+      最荒诞的不是他穿铠甲。是这副铠甲放进整个故事里，居然显得有点合理。
+    humanized_excerpt: |
+      我对那身铠甲兴趣不大。报道里让我停下来的，是当事人已经 21 岁，仍然可以被家里以「为她好」的名义交给一家机构带走。
+
+      这事不用讲得太玄。一个成年人不愿意去，机构有没有权力把人留下？如果没有，家长付了钱也不能替她同意。至于机构具体做过什么，哪些说法能够证实，还要等警方调查。
+  - id: deepseek-balanced-popular-science
+    feedback_source: "DeepSeek review supplied by user"
+    expected_flags:
+      - balanced-science-template
+      - warm-science-ending
+    ai_like_excerpt: |
+      大多数情况下，农田里重新出现野鸡，是件好事。
+
+      不过，单凭在田里看见几只野鸡，还不能证明整个生态环境已经完成了多大改善。
+
+      野鸡会吃昆虫，这对控制部分农田害虫有帮助。
+
+      麻烦也很现实。刚播种的时候，它可能刨食种子。
+
+      这件事不用非得选一边。
+
+      春天走在田埂上，偶尔看见一只野鸡从草丛里扑棱一下飞出去，说明这块地除了产粮食，还给别的生命留了一点位置。
+    humanized_excerpt: |
+      如果只是偶尔从地头扑棱飞出去几只，先别紧张。野鸡本来就爱在田边活动，附近草丛和灌木多一点，人少抓一点，数量就容易恢复。
+
+      真正需要留意的是刚播种那几天。它们如果成群刨种子，确实会造成损失。遇到这种情况别自己下套，先找当地林草或农业部门问合法的驱赶办法。零星出现，通常不用管。
+  - id: concentrated-contrast-reframes
+    feedback_source: "User feedback supplied on 2026-06-02"
+    expected_flags:
+      - contrast-reframe-adjacent-paragraphs
+      - contrast-reframe-cluster
+      - contrast-reframe-overuse
+      - not-but-cluster
+      - not-but-template
+      - not-but-overuse
+    ai_like_excerpt: |
+      纪委让人紧张，不是因为大家不理解监督，而是因为它离风险太近。组织部门不受待见，不是因为大家讨厌组织工作，而是因为它离机会太近。
+
+      普通人担心的并非一次谈话，而是那句无心的话会不会在以后某个节点被重新提起。
+    humanized_excerpt: |
+      纪委一来电话，多数人会先紧张一下。这和喜欢不喜欢没太大关系。它接触的本来就是线索、责任和风险。
+
+      组织部门也差不多。它离考察、评价和调整太近。普通人不知道哪句闲话会不会在以后某个节点被重新提起。
+  - id: low-value-content-diagnosis
+    feedback_source: "User feedback supplied on 2026-06-04"
+    expected_flags:
+      - generic-value-advice
+      - source-copy-without-take
+      - unsupported-conclusion-stack
+      - wall-of-text
+    ai_like_excerpt: |
+      相关信息显示，优质内容应该具备主题明确、表达清晰、论据充分和排版合理等特点。这个问题本质上说明了创作者需要重视内容质量，核心在于持续提升自身能力，也反映出用户对于高价值内容的需求正在增加。值得反思的是，很多创作者缺少原创意识，具有重要意义的是，平台也应该鼓励优质表达。总的来说，创作者要提高认知，加强积累，保持理性，持续输出有价值的内容，这样才能给用户提供参考和帮助。只有不断优化写作方式，才能提升内容价值，让读者产生获得感，因此每个创作者都应该从多个角度改进自己。与此同时，创作者还要注意合理分段、增加小标题、标记重点信息、传递专业知识和分享生活经验，这些做法都能够让内容更加完整，也能够帮助用户在阅读之后形成更好的理解。内容质量的提升不是一朝一夕的事情，需要长期坚持和不断复盘，也需要创作者在日常写作中持续打磨表达方式。
+    humanized_excerpt: |
+      改一篇文章时，先看它有没有回答一个明确问题。
+
+      比如写「年轻人为什么想离开长期加班的工作」，如果只说年轻人要提升竞争力、企业要优化管理，读者很难带走东西。更有用的写法，是把压力怎么传下来的讲清楚：客户明早就要，销售把话说满，项目经理不敢往回推，最后只能让那个最没议价能力的人加班。
+
+      这条线讲出来以后，文章就有了复用价值。读者下次再看类似问题，至少知道先问三件事：谁制造了问题，谁有选择权，最后谁承担成本。
+  - id: vague-visual-delivery
+    feedback_source: "User feedback supplied on 2026-06-04"
+    expected_flags:
+      - vague-image-placement
+    ai_like_excerpt: |
+      **配图**
+
+      图一：事故现场感配图，插在开头。
+
+      图二：责任链配图，插在中段。
+
+      图三：报警和救助配图，插在后面。
+    humanized_excerpt: |
+      **配图**
+
+      图一：事故现场感配图。
+      插入位置：插在「如果目前网传视频反映的基本情况属实」这一段之后。
+
+      图二：责任链配图。
+      插入位置：插在「法律处理这种事，看的不是谁嗓门大」这一段之后。
+
+      图三：报警和救助配图。
+      插入位置：插在「越是这种时候，越要做对动作」这一段之后。
+  - id: cold-aside-template
+    feedback_source: "User feedback supplied on 2026-06-06"
+    expected_flags:
+      - cold-aside-template
+      - label-then-contrast-template
+    ai_like_excerpt: |
+      这句话可能有点冷，但很实用。
+
+      你怕被讹，就更不能动手。
+
+      这句话很冷，但很真实。一个人越想保护自己，越不能把事情推向失控。
+    humanized_excerpt: |
+      越怕被讹，越要把动作做规范。报警、叫救护车、留在现场、固定证据，这些都能保护自己；补上一脚只会把事情变成另一条行为链。
+  - id: presence-erasing-polish
+    feedback_source: "renwei-writing review on 2026-06-13"
+    expected_flags:
+      - showy-polish-cluster
+      - unattributed-specificity
+    ai_like_excerpt: |
+      把手机往旁边一放，完整工作已经是一种奢侈。心流更是稀有。
+
+      AI 还在火上浇油。每两三分钟就弹一个回复。一天下来，大脑被拽回去几百次。
+
+      我们拿什么拯救它？
+    humanized_excerpt: |
+      把手机放远一点，想完整做完一件事，已经越来越难。
+
+      进入状态也越来越难。
+
+      AI 的快，反而把这个问题放大了。每隔几分钟就要回一轮话，人刚沉下去，又被拉回来。
+
+      我们要拿什么把自己的注意力留住呢？
+  - id: evaluative-not-but-opening
+    feedback_source: "User feedback supplied on 2026-06-09"
+    expected_flags:
+      - evaluative-not-but-opening
+      - not-but-template
+    ai_like_excerpt: |
+      她转出那12万的时候，最危险的地方不是没有借条，而是她以为「关系好」可以替代手续。
+
+      很多人看到这个案子的第一反应是：女同也要彩礼？
+    humanized_excerpt: |
+      她转出那12万时，手机银行里只有一条转账记录。
+
+      等关系翻脸，再回头解释这笔钱到底是彩礼、借款还是普通赠与，就已经要靠证据说话了。很多人看到这个案子的第一反应是：女同也要彩礼？
+  - id: label-then-contrast-template
+    feedback_source: "User feedback supplied on 2026-06-13"
+    expected_flags:
+      - label-then-contrast-template
+      - over-packaged-simple-wording
+    ai_like_excerpt: |
+      这个判断很现实，但会保护你。
+
+      给自己定一个很低但稳定的版本。
+
+      简历也别写成自我介绍。
+    humanized_excerpt: |
+      先给自己定一个目标。
+
+      这个目标不用大，今天能投三份简历、改一版自我介绍、按时吃饭睡觉，就够了。

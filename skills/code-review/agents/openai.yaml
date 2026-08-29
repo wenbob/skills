@@ -1,0 +1,4 @@
+interface:
+  display_name: "代码审查"
+  short_description: "从缺陷、安全、性能和可维护性四个维度审查当前代码改动"
+  default_prompt: "使用 $code-review 审查当前改动，重点找出高风险问题。"

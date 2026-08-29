@@ -1,0 +1,4 @@
+interface:
+  display_name: "安全最佳实践"
+  short_description: "按语言和框架审查安全问题，并提供安全默认的改进建议"
+  default_prompt: "使用 $安全最佳实践 审查当前代码库，并给出安全默认的改进建议。"

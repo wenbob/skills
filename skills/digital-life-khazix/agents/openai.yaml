@@ -1,0 +1,4 @@
+interface:
+  display_name: "数字生命写作"
+  short_description: "知乎长回答、公众号长文、热点评论和产品体验写作助手"
+  default_prompt: "使用 $digital-life-khazix 根据我提供的题目或素材，写一篇可直接发布的中文长回答。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "实施计划"
+  short_description: "为功能、架构、升级或基础设施改动生成分阶段可执行计划"
+  default_prompt: "使用 $create-implementation-plan 为此任务制定实施计划。"

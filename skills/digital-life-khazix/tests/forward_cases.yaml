@@ -1,0 +1,63 @@
+version: 1
+delivery_contract:
+  default_order: "默认只给可直接发布的成稿，不附配图、插入位置、图片提示词或写作说明。"
+  minimum_images: 0
+  insertion_anchor_required: "only_when_images_requested"
+  image_safety: "仅用户明确要求配图时启用：公共事件、伤害、事故、医疗、未成年人等题材不做血腥复刻，不生成可识别当事人面部，不把未核实细节画成事实。"
+rubric:
+  - Directly answer the question within the first 300 Chinese characters.
+  - Include at least one concrete action, scene, object, or time point.
+  - Preserve the boundary between facts, attributed claims, inferences, and conditional scenes.
+  - Make the central question clear instead of drifting through loosely related opinions.
+  - Add an author-side transformation of the material: organization, explanation, selection, judgment, method, or reusable wording.
+  - Support core claims with material details, cases, comparisons, lived experience, or reasoning.
+  - Leave one natural comment entry without asking for engagement.
+  - Keep one reusable save anchor when the topic supports it.
+  - Use paragraphs, headings, and lists only when they reduce reading and review friction.
+  - Avoid generic opening lines, mechanical layers, and repeated rhetorical gestures.
+  - Avoid comprehensive moral lectures, triple parallel sentences, question barrages, forced poetic endings, viral-story deconstruction templates, and symbolic prop callbacks.
+  - For popular science, avoid encyclopedic six-part structures, automatic pros-and-cons balancing, decorative local-agency citations, and pastoral endings.
+  - Stop after the publishable draft by default; provide images, image-ready prompts, and exact insertion anchors only when the user explicitly asks for images or a graphic version.
+cases:
+  - id: workplace-resignation
+    category: workplace
+    prompt: "写一篇知乎回答：为什么越来越多年轻人宁愿降薪，也想从长期加班的工作里离开？"
+    expected_mode: discussion
+    comment_entry: "读者补充自己真正决定离职的那个瞬间。"
+    save_anchor: "判断一份工作是否长期依赖员工余量补流程漏洞。"
+    must_avoid: "不要虚构具体朋友，不要只写老板坏和年轻人吃不了苦。"
+  - id: relationship-control
+    category: relationship
+    prompt: "写一篇知乎回答：伴侣凡事都替我做决定，这是负责，还是控制欲太强？"
+    expected_mode: discussion
+    comment_entry: "读者讨论有主见和剥夺拒绝权的边界。"
+    save_anchor: "区分负责和控制的判断标准。"
+    must_avoid: "不要滑向性别站队，不要给陌生人做人格诊断。"
+  - id: social-event-boundary
+    category: social-event
+    prompt: "根据一则公共事件材料写回答。材料只确认：当事人被机构带走 3 天，家属称事前未收到书面通知，机构回应称流程合规。讨论时守住事实边界。"
+    expected_mode: discussion
+    comment_entry: "读者讨论流程合规和知情权之间的边界。"
+    save_anchor: "事实、单方说法和待核实问题的拆分。"
+    must_avoid: "不要补写材料中不存在的台词、动机和现场细节。不要列出三条线完成价值观闭环，不要连续使用排比短句和设问，不要按完整时间线复述材料后再做制度升华。"
+  - id: hot-topic-rule-change
+    category: hot-topic
+    prompt: "写一篇热点评论：某平台调整规则后，商家和用户都在抱怨。不要只站队，解释为什么双方都觉得自己在承担损失。"
+    expected_mode: discussion
+    comment_entry: "读者从商家或用户角度补充真实损失。"
+    save_anchor: "拆解规则变化中谁承担成本、谁有选择权。"
+    must_avoid: "不要写成平台必然作恶，也不要写空泛的理性呼吁。"
+  - id: ai-tool-workflow
+    category: ai-tool
+    prompt: "根据用户提供的实测记录写文章：用 Codex 接手陌生项目，先看目录、找入口、运行测试，再定位问题。重点写工作流变化。"
+    expected_mode: story
+    comment_entry: "读者补充自己最希望 AI 接手的麻烦环节。"
+    save_anchor: "陌生项目接手时可复用的操作顺序和判断节点。"
+    must_avoid: "不要写产品通稿，不要声称做过用户没有提供的测试。"
+  - id: product-experience-purchase
+    category: product-experience
+    prompt: "写一篇产品体验回答：用户试用了一个会议纪要工具，录音识别不错，但多人抢话时频繁分错发言人。讨论它适合谁、不适合谁。"
+    expected_mode: story
+    comment_entry: "读者补充自己最难接受的产品翻车点。"
+    save_anchor: "适用场景、不适用场景和购买前检查项。"
+    must_avoid: "不要只列功能，不要把一次体验扩写成普遍结论。"

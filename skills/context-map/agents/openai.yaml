@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目上下文地图"
+  short_description: "在修改代码前定位涉及文件、依赖、测试和可复用实现模式"
+  default_prompt: "使用 $context-map 梳理本次任务涉及的文件、依赖和测试。"

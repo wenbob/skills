@@ -8,6 +8,12 @@
 
 | 中文名称 | 原始 Skill 标识 | 作用 |
 | --- | --- | --- |
+| 数字生命写作 | `digital-life-khazix` | 根据题目、素材或采访内容撰写可直接发布的知乎长回答、公众号文章、热点评论和产品体验文章。 |
+| 代码审查 | `code-review` | 从缺陷、安全、性能和可维护性等维度审查代码改动，并按优先级给出可执行建议。 |
+| 项目上下文地图 | `context-map` | 在修改代码前定位相关文件、直接依赖、测试覆盖和仓库中的参考实现模式。 |
+| 网页应用测试 | `webapp-testing` | 使用真实浏览器验证页面交互、表单流程、响应式表现和控制台日志。 |
+| 安全最佳实践 | `安全最佳实践` | 按语言和框架审查安全问题，并给出安全默认的实现与加固建议。 |
+| 实施计划 | `create-implementation-plan` | 为新功能、重构、升级、架构或基础设施改动生成分阶段可执行计划。 |
 | 知识库洁癖 | `knowledge-cleanup` | 在用户明确要求时核对并同步项目文档、规则和 Agent 记忆，清理过期、重复或互相冲突的知识。 |
 | 存储空间分析 | `storage-analyzer` | 在 Windows 或 macOS 上只读分析磁盘占用，按风险等级给出清理建议并生成 HTML 报告。 |
 | 技能总结 | `skill-zongjie` | 盘点本机自定义 Skills，逐项生成简洁的名称和用途摘要。 |
@@ -38,5 +44,5 @@ Copy-Item -Recurse -LiteralPath '.\skills\skill-zongjie' -Destination "$env:CODE
 
 ## 说明
 
-这是首批公开整理版本。个人写作风格、体积较大的 PPT 工具链，以及来源需要进一步核对的第三方 Skills 暂未收录。
+仓库同时包含个人定制 Skill 和注明来源的第三方 Skill。第三方作者、来源与许可证情况见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。体积较大的 PPT 工具链及其他未整理 Skill 暂未收录。
 
